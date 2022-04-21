@@ -1,18 +1,19 @@
-.app{
-    width: 100%;
+.app {
     height: 100vh;
-    display: flex;
 
-    .sections{
-        width:100%;
+    .sections {
+        width: 100%;
         height: calc(100vh - 70px);
-        background-color: pink;
+        background-color: salmon;
         position: relative;
         top: 70px;
-        left: 0;
-        
+
+
+        >* {
+            width: 100%;
+            height: calc(100vh - 70px);
+        }
+
+
     }
-    
 }
-
-

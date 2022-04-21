@@ -11,9 +11,7 @@ import "./app.scss";
 function App() {
   return (
     <div className="app">
-      <div className="toolbar">
-        <Topbar />
-      </div>
+      <Topbar/>
       <div className="sections">
         <Intro/>
         <Portfolio/>
