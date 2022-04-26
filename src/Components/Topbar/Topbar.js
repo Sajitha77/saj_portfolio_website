@@ -8,8 +8,8 @@ export default function Topbar() {
                 <div className='left'>
                     <a href='#intro' className='logo'>Saj Polwatta</a>
                     <div className='colorMode'>
-                        <VscColorMode/>
-                            <span>DarkMode</span>
+                        <VscColorMode className='colorIcon'/>
+                            <span>Lightmode/Darkmode</span>
                     </div>
                 </div>
                 <div className='right'>
