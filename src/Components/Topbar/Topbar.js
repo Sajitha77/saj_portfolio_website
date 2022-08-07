@@ -1,5 +1,4 @@
 import './topbar.scss'
-import {VscColorMode} from 'react-icons/vsc'
 
 export default function Topbar({menuOpen, setMenuOpen}) {
     return (
@@ -7,10 +6,6 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             <div className='wrapper'>
                 <div className='left'>
                     <a href='#intro' className='logo'>Saj Polwatta</a>
-                    <div className='colorMode'>
-                        <VscColorMode className='colorIcon'/>
-                            <span>Lightmode/Darkmode</span>
-                    </div>
                 </div>
                 <div className='right'>
                     <div className='navMenu' onClick={()=>setMenuOpen(!menuOpen)}>
