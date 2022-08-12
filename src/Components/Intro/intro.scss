@@ -25,5 +25,45 @@
     .right{
         flex: 1;
         background-color: bisque;
+        position: relative;
+
+        .wrapper{
+            height: 100%;
+            width: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 35px;
+
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 20px;
+            left: 40%;
+
+            img{
+                width: 50px;
+                animation: arrowBlink 3s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0;
+             
+                }
+                
+            }
+        }
     }
 }

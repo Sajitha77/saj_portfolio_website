@@ -15,7 +15,8 @@ export default function Intro() {
                     <h1>Saj Polwatta!</h1>
                     <h3>Computer Science Student at Carleton University</h3>
                 </div>
-                <a href='#protfolio'>
+                <a href='#portfolio'>
+                    <img src='assets/down.png' alt='down'></img>
                     
                 </a>
             </div>
