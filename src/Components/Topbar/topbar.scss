@@ -3,7 +3,7 @@
 .topbar {
     width: 100%;
     height: 70px;
-    background-color: white;
+    background-color: rgb(13, 116, 125);
     color: $mainColor;
     position: fixed;
     top: 0;
@@ -19,15 +19,26 @@
         .left{
             display: flex;
             align-items: center;
+            //justify-content: space-between;
+            //margin-right: 40px;
+            
 
             .logo{
-                font-size: 30px;
+                font-size: 42px;
                 font-weight: 700;
                 text-decoration: none;
                 color: inherit;
                 margin-right: 40px;
 
             }
+
+            .itemContainer{
+                display: flex;
+                align-items: center;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+
             
         }
         .right{
@@ -47,12 +58,6 @@
                     transition: all 2s ease;
                 }
             }
-        .middle{
-
-            margin-right: 250px;
-            transition: 0.5s;
-            opacity: 0.8;
-        }
 
         }
     }

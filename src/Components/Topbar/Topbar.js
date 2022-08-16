@@ -6,19 +6,24 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             <div className='wrapper'>
                 <div className='left'>
                     <a href='#intro' className='logo'>Saj Polwatta</a>
-                </div>
-                <div className='middle'>
-                     <a href='"https://www.linkedin.com/in/sajpolwatta/'>
-                         <img src="assets/Linkedin-logo.svg" alt="LinkedIn logo/link to linkedin profile"></img>
+                    <div className='itemContainer'>
+                        <a href='"https://www.linkedin.com/in/sajpolwatta/'>
+                            <img src="assets/Linkedin-logo.svg" alt="LinkedIn logo/link to linkedin profile"></img>
                          </a>
-                    <a href='"https://github.com/Sajitha77'>
-                        <img src="assets/github-logo.svg" alt="LinkedIn logo/link to linkedin profile"></img>
+                    </div>
+                    <div className='itemContainer'>
+                        <a href='"https://github.com/Sajitha77'>
+                            <img src="assets/github-logo.svg" alt="LinkedIn logo/link to linkedin profile"></img>
                         </a>
-                    <a href='"#contact'>
-                        <img src="assets/Contact-logo.svg" alt="LinkedIn logo/link to linkedin profile"></img>
+                    </div>
+                    <div className='itemContainer'>
+                        <a href='"#contact'>
+                            <img src="assets/Contact-logo.svg" alt="LinkedIn logo/link to linkedin profile"></img>
                         </a>
-
-
+                    </div>
+                    
+                    
+                   
                 </div>
                 <div className='right'>
                     <div className='navMenu' onClick={()=>setMenuOpen(!menuOpen)}>
