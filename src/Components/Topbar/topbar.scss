@@ -3,7 +3,7 @@
 .topbar {
     width: 100%;
     height: 70px;
-    background-color: rgb(13, 116, 125);
+    background-color: rgb(119, 119, 119);
     color: $mainColor;
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@
             
 
             .logo{
-                font-size: 42px;
+                font-size: 46px;
                 font-weight: 700;
                 text-decoration: none;
                 color: inherit;
@@ -38,9 +38,6 @@
                 margin-left: 100px;
                 margin-right: 100px;
 
-                .img{
-                    color: black;
-                }
             }
 
             
