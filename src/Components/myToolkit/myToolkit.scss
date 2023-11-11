@@ -1,0 +1,27 @@
+.toolkit {
+    position: relative;
+    padding: 50px 0;
+    background-color: #f4f4f4; 
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .toolkit-icons {
+        position: relative;
+        width: 450px; // Set a size for your jar
+        height: 450px;
+        border-radius: 50%; // Make it a circle
+        margin: 0 auto; // Center horizontally
+        overflow: hidden; // Ensure icons don't appear outside the jar
+    
+        .tool {
+            position: absolute; // Allows the icons to be freely positioned within the container
+            width: 50px; // Defines a fixed width for the icons
+            height: auto; // Maintains the aspect ratio of the icons
+            transition: transform 0.5s, left 0.5s, top 0.5s; // Adds smooth transitions for any changes in position or transformation
+        }
+    }
+}
