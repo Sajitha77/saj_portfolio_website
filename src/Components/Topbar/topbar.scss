@@ -3,12 +3,12 @@
 .topbar {
     width: 100%;
     height: 70px;
-    background-color: rgb(119, 119, 119);
-    color: $mainColor;
+    background-color: #4682B4; // Dark Blue
+    color: #FFFFFF; // White
     position: fixed;
     top: 0;
     z-index: 2;
-    transition: all 1s ease;
+    transition: all 0.8s ease;
 
     .wrapper {
         padding: 15px 30px;
@@ -16,34 +16,38 @@
         align-items: center;
         justify-content: space-between;
 
-        .left{
+        .left {
             display: flex;
+            justify-content: center;  // Centers the child items
             align-items: center;
-            //justify-content: space-between;
-            //margin-right: 40px;
-            
-
-            .logo{
-                font-size: 46px;
-                font-weight: 700;
+            flex-grow: 1; // Make sure it occupies maximum space for centering
+        
+            .logo {
+                font-family: 'Playfair Display', serif; // The fancier font
+                font-size: 48px;
+                font-weight: 600;
                 text-decoration: none;
-                color: inherit;
-                margin-right: 40px;
-
+                color: #FFFFFF; // White
+                margin-right: 20px; // Increased for a bit of separation
+                transition: color 0.3s ease;
+                position: absolute;  // To fix its position to the left
+                left: 15px;  // Distance from the left edge
             }
-
-            .itemContainer{
+        
+            .social-icons {
                 display: flex;
-                align-items: center;
-                margin-left: 100px;
-                margin-right: 100px;
-
+                gap: 200px; // Reduced gap for closer centering
+        
+                a img {
+                    color: #FFFFFF; // Keeping icons white
+                    filter: invert(100%); // This will ensure SVGs are white
+                }
             }
-
-            
         }
-        .right{
-            .navMenu{
+        
+        
+        .right {
+            .navMenu {
                 width: 32px;
                 height: 25px;
                 display: flex;
@@ -51,39 +55,36 @@
                 justify-content: space-between;
                 cursor: pointer;
 
-                span{
+                span {
                     width: 100%;
                     height: 3px;
-                    background-color: $mainColor;
+                    background-color: #FFFFFF; // White
                     transform-origin: left;
-                    transition: all 2s ease;
+                    transition: all 0.3s ease;
                 }
             }
-
         }
     }
     
+    &.active {
+        background-color: #2E4A62; // Darker Blue for active state
 
-    &.active{
-        color: white;
-        background-color: $mainColor;
-        
-
-        .navMenu{
-            span{
-                &:first-child{
-                    background-color: white;
-                    transform: rotate(45deg);
-                }
-                &:nth-child(2){
-                    opacity: 0;
-                }
-                &:last-child{
-                    background-color: white;
-                    transform: rotate(-45deg);
-                }
+        .left {
+            .logo, .social-icons a img {
+                color: #FFFFFF; // Keeping it white
             }
-            
+        }
+
+        .navMenu span {
+            &:first-child {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                transform: rotate(-45deg);
+            }
         }
     }
 }

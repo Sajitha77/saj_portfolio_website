@@ -1,9 +1,9 @@
 @import "../../global.scss";
 
-.menu{
+.menu {
     width: 300px;
     height: 100vh;
-    background-color: $mainColor;
+    background-color: #2E4A62; // Darker Blue to match with the top bar
     position: fixed;
     top: 0;
     right: -300px;
@@ -18,28 +18,26 @@
         right: 0;
     }
 
-    ul{
+    ul {
         margin: 0;
         padding: 0;
         list-style: none;
         font-size: 30px;
         font-weight: 300;
-        color: white;
-        width: 60%;
+        color: #FFFFFF; // Text in the menu remains white
 
-        li{
+        li {
             margin-bottom: 30px;
-            a{
+            
+            a {
                 font-size: inherit;
                 color: inherit;
                 text-decoration: none;
             }
 
-            &:hover{
+            &:hover {
                 font-weight: 700;
             }
-            
         }
     }
-
 }
